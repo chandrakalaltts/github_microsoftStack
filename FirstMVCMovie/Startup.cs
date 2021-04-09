@@ -27,7 +27,7 @@ namespace FirstMVCMovie
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<FirstMVCMovieContext>(options => options.UseSqlServer(Configuration.GetConnectionString("FirstMVCMovieContxt")));
+            services.AddDbContext<FirstMVCMovieContext>(options => options.UseSqlServer(Configuration.GetConnectionString("FirstMVCMovieContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
